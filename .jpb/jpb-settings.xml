@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseMigrationSettings" lastSelectedDirectory="src/main/resources/db.migration\" />
+  <component name="JpaLiquibaseChangesConfig">
+    <exclude-change idName="song_seq" tagName="createSequence" />
+    <exclude-change idName="song_id_seq" tagName="createSequence" />
+    <exclude-change idName="artist_id_seq" tagName="createSequence" />
+    <exclude-change idName="album_id_seq" tagName="createSequence" />
+    <exclude-change idName="gender_id_seq" tagName="createSequence" />
+    <exclude-change idName="genre#name" tagName="dropNotNullConstraint" />
+    <exclude-change idName="album#uuid" tagName="dropNotNullConstraint" />
+    <exclude-change idName="artist#uuid" tagName="dropNotNullConstraint" />
+    <exclude-change idName="genre#uuid" tagName="dropNotNullConstraint" />
+  </component>
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit name="Default">
+        <packages>
+          <package value="com.songify" />
+        </packages>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>
